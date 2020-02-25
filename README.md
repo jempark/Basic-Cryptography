@@ -44,7 +44,7 @@ plot_distribution(timearray);
 To allow your programs to use these cryptographic functions included in the OpenSSL library, you can
 refer to the following Makefile example for header files inclusion and static library linking. Note to update
 OPENSSL setting to the directory of your downloaded OpenSSL:
-``
+```
 CC=gcc
 OPENSSL=../../openssl
 INCLUDE=$(OPENSSL)/include/
