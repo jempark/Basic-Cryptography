@@ -1,11 +1,11 @@
 # Basic Cryptography - AES and RSA
 AES and RSA for secure network communications
 
-## 1 Overview
+## Overview
 Use AES and RSA for secure network communications. These two cryptographic algorithms are used in our daily life (e.g. HTTPS protocol). 
 We will analyze the performance of OpenSSL implementations of both algorithms, and then we will use them to set up secure communication between the client and the server to obtain a secret.
 
-## 3 Lab Module 1: Performance of Ciphers 
+## Performance of Ciphers 
 The OpenSSL library has the following APIs for RSA
 1. RSA public encrypt
 2. RSA public decrypt
@@ -58,7 +58,7 @@ rm -rf program
 
 Plot timing distributions of these samples and find the mean for each function.
 
-## 4 Lab Module 2: AES Encryption Mode
+## AES Encryption Mode
 There are several operation modes of AES. In this section, you will explore two of them: ECB and CBC.
 Using each of these two modes to encrypt an image file and report your findings.
 
@@ -75,7 +75,7 @@ $ openssl enc -aes-128-ecb -nosalt -pass pass:"A" -in body.bin -out enc_body.bin
 $ cat header.txt enc_body.bin > ecb_penguin.ppm
 ```
 
-## Lab Module 3: Secure Communication
+## Secure Communication
 You will need to use both AES and RSA to communicate with a service we host on 10.75.11.176 at port
 12000 and obtain a 16-byte secret. This address cannot be accessed from the public Internet.
 
